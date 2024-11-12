@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/contact.css">
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <!-- <script>
+      var onSuccess = function(response) {
+
+        alert("Success!");
+      
+        console.log(response);
+      
+      };
+      
+      
+      var onError = function(err) {
+      
+        alert("Error!");
+      
+        console.error(err);
+      
+      };
+      
+      
+      // TODO: replace the endpoint url with your own
+      
+      sendEmail("https://mail.google.com/mail/u/1/#inbox/start", {
+      
+        example_user: "cephasatsu7@gmail.com",
+      
+        example_data: new Date().toISOString(),
+      
+      }, onSuccess, onError);
+      
+      
+      // The same code as in previous snippet...
+      
+      function sendEmail(endpointUrl, data, onSuccess, onError) {
+      
+        $document({
+      
+            type: "POST",
+      
+            url: endpointUrl
+      
+            data: js.stringify(data),
+      
+            contentType: "application/json; charset=utf-8",
+      
+            dataType: "json",
+      
+            success: onSuccess,
+      
+            error: function(xhr, status) {
+      
+              if (typeof this.statusCode[xhr.status] !== 'undefined') {
+      
+                return false;
+      
+              }
+      
+      
+              onError(err);
+      
+            },
+      
+            statusCode: {
+      
+              // Endpoint thinks that it's likely a spam/bot request, you need to change "spam protection mode" to "never" in HeroTofu forms
+      
+              422: function(response) {
+      
+                alert("Cannot send request, are you robot?");
+      
+              },
+      
+            }
+      
+          });
+      
+      }
+    </script> -->
+  </head>
+  <body>
+    <header>
+      <nav>
+          <div class="nav-links">
+              <ul>
+                  <li><a href="HomePage.html">Home</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="aboutpage.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+    <div class="main">
+      <div class="div1">
+        <ul>
+          <li class="h">Address</li>
+          <li>Kumasi</li>
+          <li>Accra</li>
+          <li>Tarkoradi</li>
+          <li>Ho</li>
+        </ul>
+
+        <ul>
+          <li class="h">Call us Now</li>
+          <li>+233(0)244667869/247001128</li>
+        </ul>
+
+        <ul>
+          <li class="h">General Support</li>
+          <li>info@cyncep.com</li>
+        </ul>
+      </div>
+      <div class="div2">
+        <h3>Contact Us</h3>
+        <form>
+          <label>Name</label><br/>
+          <input type="text"/><br/>
+
+          <label>Email</label><br/>
+          <input type="email"/><br/>
+
+          <label>Phone</label><br/>
+          <input type="text"/><br/>
+
+          <label>Subject</label><br/>
+          <input type="text"/><br/>
+
+          <label>Message</label><br/>
+          <textarea id="m"></textarea><br/>
+
+          <input id="sb" type="submit" value="send"/>
+        </form>
+      </div>
+    </div>
+  </body>
+  
+</html>

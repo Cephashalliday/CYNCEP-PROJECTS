@@ -1,0 +1,109 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: rgba(15, 20, 94, 0.815);
+}
+
+nav{
+  width: 99%;
+  position:sticky;
+  margin: 5px auto;
+  z-index: 1;
+  display:flex;
+  align-items: center;
+}
+.nav-links{
+  width: 90%;
+  margin: 1px;
+  box-shadow:1.0px 2.5px 5.8px;
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 3px 20px;
+  margin-bottom: 20px;
+}
+.nav-links ul li a{
+  color: #91ff00;
+  text-decoration:none;
+  font-size: 20px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #ffffff;
+  display: block;
+  margin: auto;
+  transition: 0.5s
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+
+.main{
+  display: flex;
+  width: 85%;
+  margin: 50px auto 50px auto;
+  box-shadow: 0px 0px 10px 2px black;
+}
+.div1{
+  display: inline-block;
+  width: 48%;
+  height: 550px;
+  background-image: linear-gradient(45deg, rgb(0,0,0,0.2),rgb(0,0,0,0.2)), url("ccccc.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.div1 ul{
+  margin-top: 100px;
+  margin-left: 40px;
+}
+.div1 ul li{
+  text-decoration: none;
+  list-style: none;
+  color: bisque;
+  font-size: 20px;
+}
+.div1 ul .h{
+  color: white;
+}
+
+
+.div2{
+  display: inline-block;
+  width: 50%;
+  background-color: whitesmoke;
+}
+.div2 h3{
+  margin-left: 40%;
+}
+.div2 form label{
+  margin-left: 10%;
+}
+.div2 form input{
+  font-size: 18px;
+  width: 80%;
+  height: 20px;
+  margin: 10px 10% 10px 10%;
+}
+.div2 form #m{
+  font-size: 18px;
+  width: 80%;
+  margin: 10px 10% 10px 10%;
+  height: 100px;
+}
+.div2 form #sb{
+  margin-top: 30px;
+  height: 30px;
+  background-color: black;
+  color: wheat;
+}
+.div2 form #sb:active{
+  font-size: 16px;
+}
